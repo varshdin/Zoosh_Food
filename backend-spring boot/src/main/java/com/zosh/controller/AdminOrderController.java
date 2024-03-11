@@ -39,6 +39,8 @@ public class AdminOrderController {
 	private UserService userService;
 	
 	
+	//DeleteMapping for delete Order 
+	
     @DeleteMapping("/order/{orderId}")
     public ResponseEntity<String> deleteOrder(@PathVariable Long orderId) throws OrderException{
     	if(orderId!=null) {
